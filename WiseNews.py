@@ -19,7 +19,7 @@ def Init(thecookie):
 
     para=[]
     articleisinUrlList=False
-    base = "http://libwisenews.wisers.net"
+    base = "http://cmispub.cicpa.org.cn/cicpa2_web/PersonIndexAction.do"
     Start = -50
     Interval = 50
     articleisinUrlList = False
@@ -91,12 +91,15 @@ def GenePageUrl(page_urls):
     #if tab_pages>=0:
         page_url=page_urls[tab_pages].strip()
 
-        myheaders = {"Host": "libwisenews.wisers.net",
-                     "Referer": "http://libwisenews.wisers.net/wisenews/index.do?_",
-                     "Content-type": "text/html; charset=utf-8",
-                     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-                     "Accept Language": "zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3",
-                     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:36.0) Gecko/20100101 Firefox/36.0",
+        myheaders = {"Request-Line":"POST /cicpa2_web/PersonIndexAction.do HTTP/1.1",
+                     "Accept": "text/html, application/xhtml+xml, image/jxr, */*",
+                     "Accept-Encoding":"gzip, deflate",
+                     "Connection":	"Keep-Alive",
+                     "Host": "cmispub.cicpa.org.cn",
+                     "Referer": "http://cmispub.cicpa.org.cn/cicpa2_web/PersonIndexAction.do",
+                     "Content-Type":	"application/x-www-form-urlencoded",
+                     "Accept-Language":"zh-CN",
+                     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko",
                      "Cookie": mycookie
                      }
         #print(page_url)
