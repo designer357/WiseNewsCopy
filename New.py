@@ -13,7 +13,7 @@ global mycookie
 global myheaders
 global filename
 filename="Urls.txt"
-mycookie="JSESSIONID=EA3511810E7F6DD9C52EA2C1AD828A7D; cookiee=20111116"
+mycookie="JSESSIONID=03359AAC608165C8F2EBC9B435AA59AD; cookiee=20111116"
 myheaders = {"Request-Line":"POST /cicpa2_web/PersonIndexAction.do HTTP/1.1",
             "Accept": "text/html, application/xhtml+xml, image/jxr, */*",
             "Accept-Encoding":"gzip, deflate",
